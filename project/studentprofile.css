@@ -1,0 +1,173 @@
+body{
+    background-color: #2a2185;
+    font-family: "Ubuntu",sans-serif;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+#profileSection{
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    padding: 2rem;
+    bottom: 10px;
+    position: relative;
+    height: 77vh;
+}
+#studentPicture{
+    position: relative;
+    left: 65rem;
+    height: 15rem;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.info{
+    position: relative;
+    bottom: 15rem;
+    padding: 1rem;
+    width: 47rem;
+}
+.hed{
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: none;
+    top: 5px;
+}
+.cf{
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    box-shadow: 0 0 2px rgba(0,0,0,0.4);
+    left: 10px;
+    bottom: 12rem;
+    height: 6rem;
+    width: 19rem;
+    padding: 1rem;
+    text-decoration: none;
+    justify-content: center;
+}
+.cf_img{
+    height:55px;
+    width: 60px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    left: 190px;
+    bottom: 50px;
+}
+.ph{
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    left: 28rem;
+    box-shadow: 0 0 2px rgba(0,0,0,0.4);
+    bottom: 20rem;
+    height: 6rem;
+    width: 19rem;
+    padding: 1rem;
+    text-decoration: none;
+    justify-content: center;
+}
+.ph_img{
+    height:55px;
+    width: 60px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    left: 190px;
+    bottom: 50px;
+}
+.crs{
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    box-shadow: 0 0 2px rgba(0,0,0,0.4);
+    bottom: 28rem;
+    left: 55rem;
+    height: 6rem;
+    width: 19rem;
+    padding: 1rem;
+    text-decoration: none;
+    justify-content: center;
+}
+.lout{
+    position: relative;
+    left: 75rem;
+    bottom: 26rem;
+    background-color: #2a2185;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 1.25rem;
+    width: 7rem;
+    text-align: center;
+    justify-content: center;
+}
+.icon{
+    color: #fff;
+    padding-right: 12px;
+    margin-top: 7px;
+    height: 9px;
+    text-decoration: none;
+}
+.title{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.popup {
+    position: relative;
+    left: 45rem;
+    bottom: 46rem;
+    height: 130px;
+    border-radius: 15px;
+    width: 400px;
+    transition: all 0.3s ease;
+     transform: translate(-50%, -50%) scale(1.2);
+    background-color: #d1eeff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+    
+}
+#lekha{
+    text-align: center;
+}
+.popup P {
+     margin-top: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+  }
+  button {
+    margin: 5px;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 4px 8px;
+    border: none;
+    background: rgb(16, 49, 81);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #d1eeff;
+    color: rgb(16, 49, 81);
+  }
+#b1, #b2{
+    position: relative;
+    left: 7rem;
+    bottom: 1.5rem;
+}

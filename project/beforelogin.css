@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+body{
+    font-family: "Ubuntu",sans-serif;
+    background-color: blueviolet;
+}
+.admin img{
+    position: relative;
+    top: 110px;
+    left: 51px;
+}
+.stu img{
+    position: relative;
+    top: 115px;
+    left: 63px;
+}
+.admin {
+    position: relative;
+    top: 3rem;
+    left: 195px;
+    background-color: rgb(181, 151, 218);
+    height: 38rem;
+    width: 25rem;
+    box-shadow: box-shadow: 0 0 10px 2px rgba(100, 100, 100, .1);;;
+}
+.stu {
+    position: relative;
+    bottom: 579px;
+    left: 870px;
+    background-color: rgb(181, 151, 218);
+    height: 38rem;
+    width: 25rem;
+    box-shadow: box-shadow: 0 0 10px 2px rgba(100, 100, 100, .1);;;
+}
+.admin h2{
+    position: relative;
+    top: 510px;
+    left: 127px;
+    
+}
+.admin h2:hover{
+   color: #2a2a68;
+}
+.stu h2:hover{
+    color: #2a2a68;
+ }
+.stu h2{
+    position: relative;
+    top: 503px;
+    left: 127px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

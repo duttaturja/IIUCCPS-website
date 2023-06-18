@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./profile.css">
+    <title>Admin Profile</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="adminnav">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="./images/293579643_111356041642908_7631638669047749777_n.png" height="200px">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./profile.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./studentenroll.html">
+                        <span class="icon"><ion-icon name="reader-outline"></ion-icon></span>
+                        <span class="title">Student enroll</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./studentmanage.html">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Student management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./trainermanage.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Trainer management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Mentormanage.html">
+                        <span class="icon"><ion-icon name="glasses-outline"></ion-icon></span>
+                        <span class="title">Mentor management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="showLogoutPopup()">
+                        <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                        <span class="title">Logout</span>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dash">
+        <h3>Name</h3>
+        <input type="text" class="input" value="Jamil-As-Ad">
+        <h3>Student ID</h3>
+        <input type="text" class="input" value="C131039">
+        <h3>Batch</h3>
+        <input type="text" class="input" value="36th">
+        <h3>Section</h3>
+        <input type="text" class="input" value="Invalid">
+        <h3>E-mail</h3>
+        <input type="text" class="input" value="jamilasad1@gmail.com">
+        <h3>Contact</h3>
+        <input type="text" class="input" value="+8801626890190">
+    </div>
+    <div class="hero">
+        <div class="card">
+            <img src="./images/JAA.png" id="pp">
+            <label for="input-file">Update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        </div> 
+    </div>
+    <div class="popup" id="logoutPopup">
+        Are you sure you want to log out?<br>
+        <button onclick="logout()">Logout</button>
+        <button onclick="cancelLogout()">Cancel</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    function showLogoutPopup() {
+            document.getElementById('logoutPopup').style.display = 'block';
+        }
+
+        function cancelLogout() {
+            document.getElementById('logoutPopup').style.display = 'none';
+        }
+
+        function logout() {
+            window.location.href="index.html"
+        }
+    let dp = document.getElementById('pp');
+    let inputf= document.getElementById('input-file');
+
+    inputf.onchange = function(){
+        dp.src = URL.createObjectURL(inputf.files[0]);
+    }
+</script>
+</body>
+</html>

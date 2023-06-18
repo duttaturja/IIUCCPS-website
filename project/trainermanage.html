@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./trainermanage.css">
+    <title>Trainer Management Page</title>
+    <style>
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 55%;
+            height: 150px;
+            border-radius: 15px;
+            width: 400px;
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%) scale(1.2);
+            background-color: #d1eeff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            display: none;
+
+        }
+
+        .popup P {
+            margin-top: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        #butto {
+            margin: 5px;
+            margin-top: 50px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            padding: 4px 8px;
+            border: none;
+            background: rgb(16, 49, 81);
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #butto:hover {
+            background-color: #d1eeff;
+            color: rgb(16, 49, 81);
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="adminnav">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="./images/293579643_111356041642908_7631638669047749777_n.png" height="200px">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./profile.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./studentenroll.html">
+                        <span class="icon"><ion-icon name="reader-outline"></ion-icon></span>
+                        <span class="title">Student enroll</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./studentmanage.html">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Student management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./trainermanage.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Trainer management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Mentormanage.html">
+                        <span class="icon"><ion-icon name="glasses-outline"></ion-icon></span>
+                        <span class="title">Mentor management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="showLogoutPopup()">
+                        <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tt">
+        <h1>Tranier management</h1>
+    </div>
+    <div class="traine" id="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Emon Biswas">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191001">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="7th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Intermediate">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Sunday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="BFS+DFS">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Ahsanul Tanvir">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191002">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="7th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Intermediate">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Saturday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="Binary Search">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Md Ariful Islam">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191003">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="7th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Intermediate">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Monday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="Dijkstra Algorithm">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Anas Ansary">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191004">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="Invalid">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Intermediate">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Tuesday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="Binary Search Tree">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Naimur Rashed Limon">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191005">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="7th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Beginner">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Saturday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="2d-Array">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Shams Al Farabi">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191009">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="7th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Beginner">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Wednesday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="Number Theory">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Projnajit Barua">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191011">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="6th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Newcomer">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Friday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="String">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Jobayed Hossain Asif">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191023">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="6th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Newcomer">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Monday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="Array">
+        </div>
+    </div>
+    <div class="traine">
+        <h3>Name:</h3>
+        <input type="text" class="input" value="Sajeed Al Reefy">
+        <h3>Trainer ID:</h3>
+        <input type="text" class="input" value="C191001">
+        <h3>Semester:</h3>
+        <input type="text" class="input" value="7th">
+        <div class="in">
+            <h3>Course:</h3>
+        <input type="text" class="input" value="Beginner">
+        <h3>Next Class:</h3>
+        <input type="text" class="input" value="Friday">
+        <h3>Next topic:</h3>
+        <input type="text" class="input" value="Binary Search">
+        </div>
+    </div>
+    <div class="popup" id="logoutPopup">
+        Are you sure you want to log out?<br>
+        <button id="butto" onclick="logout()">Logout</button>
+        <button id="butto" onclick="cancelLogout()">Cancel</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    function showLogoutPopup() {
+            document.getElementById('logoutPopup').style.display = 'block';
+        }
+
+        function cancelLogout() {
+            document.getElementById('logoutPopup').style.display = 'none';
+        }
+
+        function logout() {
+            window.location.href="index.html"
+        }
+    
+</script>
+</body>
+</html>

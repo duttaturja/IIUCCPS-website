@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./Mentormanage.css">
+    <title>Mentor Management Page</title>
+    <style>
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 55%;
+            height: 150px;
+            border-radius: 15px;
+            width: 400px;
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%) scale(1.2);
+            background-color: #d1eeff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            display: none;
+
+        }
+
+        .popup P {
+            margin-top: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        #butto {
+            margin: 5px;
+            margin-top: 50px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            padding: 4px 8px;
+            border: none;
+            background: rgb(16, 49, 81);
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #butto:hover {
+            background-color: #d1eeff;
+            color: rgb(16, 49, 81);
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="adminnav">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="./images/293579643_111356041642908_7631638669047749777_n.png" height="200px">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./profile.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./studentenroll.html">
+                        <span class="icon"><ion-icon name="reader-outline"></ion-icon></span>
+                        <span class="title">Student enroll</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./studentmanage.html">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Student management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./trainermanage.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Trainer management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Mentormanage.html">
+                        <span class="icon"><ion-icon name="glasses-outline"></ion-icon></span>
+                        <span class="title">Mentor management</span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a href="#" onclick="showLogoutPopup()">
+                        <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form>
+        <div class="search">
+            <label for="search">Search Mentor: </label>
+            <input type="search" class="stid" id="search" placeholder="  Mentor ID"><button class="butn" type="button"
+                onclick="searchMen()"><i class="uil uil-search"></i></button>
+        </div>
+    </form>
+    <div class="nosearch" id="nos">
+        <h3>Mentor not found...</h3>
+    </div>
+    <div class="container" id="C193010">
+        <div class="up">
+            <h3>Name:</h3>
+            <input type="text" class="input" id="studid" value="Emon Biswas">
+            <h3>Mentor ID:</h3>
+            <input type="text" class="input" value="C193010">
+            <h3>Semester:</h3>
+            <input type="text" class="input" value="8th">
+            <div class="card">
+                <img src="./360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" id="pp">
+            </div>
+        </div>
+        <div class="down">
+            <h4>Manage students:</h4>
+            <form action="">
+                <select name="" id="mySelect">
+                    <option value="">Student ID</option>
+                    <option value="Bahan">C221001</option>
+                    <option value="Hakha">C221012</option>
+                    <option value="Sittwe">C221003</option>
+                </select>
+                <input type="text" id="text">
+                <button type="button" id="addBtn">Add</button>
+                <button type="button" id="removeBtn">Remove</button>
+    </form>
+        </div>
+    </div>
+
+    <div class="container" id="C193015">
+        <div class="up">
+            <h3>Name:</h3>
+            <input type="text" class="input" id="studid" value="Shahiduzzaman Fahad">
+            <h3>Mentor ID:</h3>
+            <input type="text" class="input" value="C193015">
+            <h3>Semester:</h3>
+            <input type="text" class="input" value="8th">
+            <div class="card">
+                <img src="./360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" id="pp">
+            </div>
+        </div>
+        <div class="down">
+            <h4>Manage students:</h4>
+            <form action="">
+                <select name="" id="mySelect">
+                    <option value="">Student ID</option>
+                    <option value="Bahan">C221004</option>
+                    <option value="Hakha">C221015</option>
+                    <option value="Sittwe">C221006</option>
+                </select>
+                <input type="text" id="text">
+                <button type="button" id="addBtn">Add</button>
+                <button type="button" id="removeBtn">Remove</button>
+    </form>
+        </div>
+    </div>
+
+
+    <div class="container" id="C193018">
+        <div class="up">
+            <h3>Name:</h3>
+            <input type="text" class="input" id="studid" value="Sayed Tahsinoor Rahman">
+            <h3>Mentor ID:</h3>
+            <input type="text" class="input" value="C193018">
+            <h3>Semester:</h3>
+            <input type="text" class="input" value="8th">
+            <div class="card">
+                <img src="./360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" id="pp">
+            </div>
+        </div>
+        <div class="down">
+            <h4>Manage students:</h4>
+            <form action="">
+                <select name="" id="mySelect">
+                    <option value="">Student ID</option>
+                    <option value="Bahan">C221007</option>
+                    <option value="Hakha">C221018</option>
+                    <option value="Sittwe">C221009</option>
+                </select>
+                <input type="text" id="text">
+                <button type="button" id="addBtn">Add</button>
+                <button type="button" id="removeBtn">Remove</button>
+    </form>
+        </div>
+    </div>
+
+
+    <div class="container" id="C201007">
+        <div class="up">
+            <h3>Name:</h3>
+            <input type="text" class="input" id="studid" value="Ahsanul Mahbub Tanvir">
+            <h3>Mentor ID:</h3>
+            <input type="text" class="input" value="C201007">
+            <h3>Semester:</h3>
+            <input type="text" class="input" value="7th">
+            <div class="card">
+                <img src="./360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" id="pp">
+            </div>
+        </div>
+        <div class="down">
+            <h4>Manage students:</h4>
+            <form action="">
+                <select name="" id="mySelect">
+                    <option value="">Student ID</option>
+                    <option value="Bahan">C221010</option>
+                    <option value="Hakha">C221002</option>
+                    <option value="Sittwe">C221013</option>
+                </select>
+                <input type="text" id="text">
+                <button type="button" id="addBtn">Add</button>
+                <button type="button" id="removeBtn">Remove</button>
+    </form>
+        </div>
+    </div>
+
+
+    <div class="container" id="C193020">
+        <div class="up">
+            <h3>Name:</h3>
+            <input type="text" class="input" id="studid" value="Projnajit Barua">
+            <h3>Mentor ID:</h3>
+            <input type="text" class="input" value="C193020">
+            <h3>Semester:</h3>
+            <input type="text" class="input" value="8th">
+            <div class="card">
+                <img src="./360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" id="pp">
+            </div>
+        </div>
+        <div class="down">
+            <h4>Manage students:</h4>
+            <form action="">
+                <select name="" id="mySelect">
+                    <option value="">Student ID</option>
+                    <option value="Bahan">C221014</option>
+                    <option value="Hakha">C221005</option>
+                    <option value="Sittwe">C221016</option>
+                </select>
+                <input type="text" id="text">
+                <button type="button" id="addBtn">Add</button>
+                <button type="button" id="removeBtn">Remove</button>
+    </form>
+        </div>
+    </div>
+
+
+    <div class="container" id="C193010">
+        <div class="up">
+            <h3>Name:</h3>
+            <input type="text" class="input" id="studid" value="Emon Biswas">
+            <h3>Mentor ID:</h3>
+            <input type="text" class="input" value="C193010">
+            <h3>Semester:</h3>
+            <input type="text" class="input" value="8th">
+            <div class="card">
+                <img src="./360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" id="pp">
+            </div>
+        </div>
+        <div class="down">
+            <h4>Manage students:</h4>
+            <form action="">
+                <select name="" id="mySelect">
+                    <option value="">Student ID</option>
+                    <option value="Bahan">C221001</option>
+                    <option value="Hakha">C221012</option>
+                    <option value="Sittwe">C221003</option>
+                </select>
+                <input type="text" id="text">
+                <button type="button" id="addBtn">Add</button>
+                <button type="button" id="removeBtn">Remove</button>
+    </form>
+        </div>
+    </div>
+    
+    
+    <div class="popup" id="logoutPopup">
+        Are you sure you want to log out?<br>
+        <button id="butto" onclick="logout()">Logout</button>
+        <button id="butto" onclick="cancelLogout()">Cancel</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+     document.getElementById('addBtn').onclick = function () {
+        let mySelect = document.getElementById('mySelect')
+        let option = document.createElement('option') 
+        let textInput = document.getElementById('text')
+
+            option.value = textInput.value
+            option.text = textInput.value
+
+            mySelect.add(option)
+            textInput.value = ""
+        }
+
+        document.getElementById('removeBtn').onclick = function () {
+            let mySelect = document.getElementById('mySelect')
+
+            mySelect.remove(mySelect.selectedIndex)
+        }
+</script>
+<script>
+    function showLogoutPopup() {
+            document.getElementById('logoutPopup').style.display = 'block';
+        }
+
+        function cancelLogout() {
+            document.getElementById('logoutPopup').style.display = 'none';
+        }
+
+        function logout() {
+            window.location.href="index.html"
+        }
+    
+</script>
+<script src="./ad.js"></script>
+</body>
+</html>

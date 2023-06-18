@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+*{
+    font-family: "Ubuntu",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black: #222;
+    --black1: #999;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.adminnav{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: rgb(16, 49, 81);
+    border-left: 10px solid rgb(16, 49, 81);
+    transition: .5s;
+    overflow: hidden;
+}
+.adminnav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.adminnav ul li{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.adminnav ul li:hover{
+    background-color: var(--white);
+}
+.adminnav ul li:nth-child(1){
+    margin-top: 1rem;
+    margin-bottom: 80px;
+    margin-left: 1rem;
+    pointer-events: none;
+}
+.adminnav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+.adminnav ul li:hover a{
+    color: rgb(16, 49, 81);
+}
+.adminnav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+.adminnav ul li a .icon ion-icon{
+    font-size: 1.75rem;
+}
+.adminnav ul li a .icon ion-icon{
+    font-size: 1.75rem;
+}
+.adminnav ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.adminnav ul li:hover a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+.adminnav ul li:hover a::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+.search{
+    font-family: 'montserrat',sans-serif;
+    margin-left: 500px;
+    position: relative;
+    top: 63px;
+    left: 50px;
+    font-size: 22px;
+    
+}
+.butn{
+    margin-left: .3rem;
+    height: 28px;
+    width: 25px;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 3px;
+}
+.butn:hover{
+    cursor: pointer;
+}
+.stid{
+    height: 28px;
+    width: 25%;
+    margin-left: .4rem;
+    cursor: auto;
+    border-radius: 6px;
+    border: 1px solid rgb(55, 55, 55);
+}
+.container {
+    display: none;
+    position: relative;
+    left: 133px;
+    height: 600px;
+    width: 80.2%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 95px;
+    margin-right: 135px;
+    text-align: center;
+    box-shadow: 0 0 2rem rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+h3{
+    margin-right: 54rem;
+    position: relative;
+    top: 32px;
+    left: 30px;
+}
+.input{
+    border: 0;
+    margin: .5rem;
+    margin-right: 25rem;
+    background-color:transparent;
+    width: 20%;
+    font-family: 'montserrat',sans-serif;
+    font-size: .9em;
+    padding: 5px 0;
+    color: black;
+    outline: none;
+}
+.card img{
+    position: relative;
+    left: 390px;
+    bottom: 180px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.up{
+    background-color: rgb(181, 197, 205);
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.down{
+    margin-top: 2px;
+    background-color: rgb(181, 197, 205);
+    height: 350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.down h4{
+    position: relative;
+    top: 29px;
+    right: 25rem;
+    font-size: 25px;
+}
+.down form{
+    margin-top: 5px;
+    position: relative;
+    top: 85px;
+    right: 20rem;
+}
+.down input{
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0.2px;
+    cursor: pointer;
+}
+.down select{
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0.2px;
+    cursor: pointer;
+}
+.down button{
+    width: 55px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0.2px;
+    cursor: pointer;
+}
+.nosearch{
+   
+    display: none;
+}
+#nos{
+    position: relative;
+    left: 660px;
+    top: 280px;
+    color: #6d6666;
+}   
+#b1, #b2{
+    position: relative;
+    left: 7rem;
+    bottom: 1.5rem;
+}

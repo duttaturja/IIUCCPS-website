@@ -1,0 +1,41 @@
+*{
+    color: white;
+}
+.course_contents{
+    margin-left: 2rem;
+}
+.course_container{
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    background-color: rgb(53, 16, 88);
+    padding: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.course_outline{
+    display: grid;
+    grid-template-columns:  50% 50%;
+    gap: 2rem;
+    padding: 2rem;
+    background-image: linear-gradient(rgb(53, 16, 88),rgb(132, 54, 206),rgb(53, 16, 88));
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.sessions{
+    padding-left: 2rem;
+}
+.btn{
+    display: inline-block;
+    color: azure;
+    background-color: black;
+    left: 8rem;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all 400ms ease;
+}
+.btn:hover{
+    background: transparent;
+    border-color: whitesmoke;
+    color: white;
+}

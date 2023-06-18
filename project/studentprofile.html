@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="studentprofile.css">
+  </head>
+<body>
+  <h1 class="hed">Student Profile</h1>
+
+  <div id="profileSection">
+    <h2>Welcome, <span id="studentName"></span>!</h2>
+    <img id="studentPicture" alt="Student Picture">
+    <div class="info"><fieldset>
+        <legend><h3>Profile Information:</h3></legend>
+        <p><strong>Student ID:</strong> <span id="studentID"></span></p>
+        <p><strong>Email:</strong> <span id="studentEmail"></span></p>
+        <p><strong>Semester:</strong> <span id="studentSemester"></span></p>
+        <p><strong>Section:</strong> <span id="studentSection"></span></p>
+    </fieldset>
+    </div>
+    <div class="limks">
+        <div class="cf">
+            <h3>Codeforces Handle:</h3>
+            <a id="codeforcesLink" href="#"><img class="cf_img" src="./images/codeforces.jpg" alt="Codeforces Logo"></a>
+        </div>
+        <div class="ph">
+            <h3>progHours Handle:</h3>
+            <a id="progHoursLink" href="#"><img class="ph_img" src="./images/proghours.JPG" alt="progHours Logo"></a>
+        </div>
+        <div class="crs">
+            <h3>Enrolled Course:</h3>
+            <p><span id="studentCourses"></span></p>
+        </div>
+        <div class="lout">
+          <a href="#" onclick="showLogoutPopup()">
+            <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+            <span class="title">Logout</span>   
+        </a>
+      </div>
+    </div>
+    <div class="popup" id="logoutPopup">
+      <h3 id="lekha">Are you sure you want to log out?</h3><br>
+      <button onclick="logout()" id="b1">Logout</button>
+      <button onclick="cancelLogout()" id="b2">Cancel</button>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="students.js"></script>
+</body>
+</html>

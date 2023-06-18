@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+*{
+    font-family: "Ubuntu",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black: #222;
+    --black1: #999;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.adminnav{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: rgb(16, 49, 81);
+    border-left: 10px solid rgb(16, 49, 81);
+    transition: .5s;
+    overflow: hidden;
+}
+.adminnav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.adminnav ul li{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.adminnav ul li:hover{
+    background-color: var(--white);
+}
+.adminnav ul li:nth-child(1){
+    margin-top: 1rem;
+    margin-bottom: 80px;
+    margin-left: 1rem;
+    pointer-events: none;
+}
+.adminnav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+.adminnav ul li:hover a{
+    color: rgb(16, 49, 81);
+}
+.adminnav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+.adminnav ul li a .icon ion-icon{
+    font-size: 1.75rem;
+}
+.adminnav ul li a .icon ion-icon{
+    font-size: 1.75rem;
+}
+.adminnav ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.adminnav ul li:hover a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+.adminnav ul li:hover a::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+.dash{
+    background-color: #FFF;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 73rem;
+    padding-bottom: 1rem;
+    height: 43rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.4);;
+    position: relative;
+    left: 20rem;
+    top: 1rem;
+}
+h3{
+    position: relative;
+    right: 1rem;
+    top: 6rem;
+    margin-left: 4rem;
+}
+h1{
+    position: relative;
+    left: 25rem;
+}
+.input, p{
+    position: relative;
+    left: 8.5rem;
+    top: 2.9rem;
+    border: 0;
+    margin: 1.3rem;
+    margin-left: 6rem;
+    border: 1px solid rgb(13, 13, 13);
+    border-radius: 7px;
+    width: 20%;
+    font-family: 'montserrat',sans-serif;
+    font-size: .9em;
+    padding: 7px 0;
+    color: black;
+    outline: none;
+}
+.new{
+    position: relative;
+    left: 28rem;
+    bottom: 36.3rem;
+}
+#aa{
+    position: relative;
+    left: 3rem;
+}
+.but{
+    position: relative;
+    left: 80rem;
+    bottom: 3rem;
+}
+.btn{
+    display: inline-block;
+    background: white;
+    padding: .8rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all 400ms ease;
+    border-radius: 5px;
+}
+.btn:hover{
+    background:transparent;
+    color: rgb(0, 0, 0);
+    border-color: white;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+    background-color: rgb(46, 189, 46);
+}
+.btn-primary{
+    background: rgb(27, 100, 172);
+    color: rgb(0, 0, 0);
+}

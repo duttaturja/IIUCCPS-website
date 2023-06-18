@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+body{
+    background-color: darkorchid;
+    font-family: 'Comic Sans MS', cursive;
+    line-height: 1.7;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    padding: 6rem 0;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+h5{
+    font-size: .8rem;
+}
+.btn{
+    display: inline-block;
+    color: azure;
+    background-color: black;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all 400ms ease;
+}
+.btn:hover{
+    background: transparent;
+    border-color: whitesmoke;
+    color: white;
+}
+.btn_4{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+}
+.trainer_container{
+    margin-top: 6rem;
+    padding: 2rem;
+    background-color: rgb(61, 11, 75);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    transition: all 400ms ease;
+    margin-bottom: 2rem;
+}
+.trainer_container:hover{
+    box-shadow: 0 2rem 2rem rgba(0,0,0,0.4);
+}
+.trainer_container p{
+    padding: 3rem;
+}
+.trainer_req{
+    padding: 2rem;
+}
+.trainer_process{
+    padding:2rem;
+}

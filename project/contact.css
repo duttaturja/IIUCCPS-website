@@ -1,0 +1,211 @@
+section{
+    position: relative;
+    overflow: hidden;
+}
+*{
+    list-style: none;
+}
+.contact{
+    background-image: linear-gradient(180deg,rgb(120, 15, 155),rgb(56, 9, 72));
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+.contact_container{
+    background-color: rgb(15, 30, 98);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+    position: relative;
+    top: 3rem;
+    /* background-image: url("file:///C:/Users/asus/Documents/code/project/iiucps/images/images/contact.svg"); */
+    opacity: .8;
+}
+.contact__aside{
+    background: rgb(82, 132, 200);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.aside__image{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+.contact__aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.contact__aside p{
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+.contact__details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contact__socials{
+    display: flex;
+    gap: .8rem;
+    margin-top: 3rem;
+}
+.contact__socials a {
+    background: #3645cd;
+    padding: 0.5rem;
+    border-radius: 40%;
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+}
+.contact__socials a:hover{
+    background: transparent;
+}
+.btn{
+    display: inline-block;
+    background: white;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all 400ms ease;
+}
+.btn:hover{
+    background: #3645cd;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+    background-color: rgb(46, 189, 46);
+}
+.btn-primary{
+    background: orangered;
+    color: white;
+    font-family: 'Comic sans MS',cursive;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+.form__name{
+    display: flex;
+    gap: 1.2rem;
+}
+.contact__form input[type="text"]{
+    width: 150rem;
+}
+input,textarea{
+    width: 100%;
+    padding: 1rem;
+    background: rgb(241, 231, 241);
+    color: rgb(0, 0, 0);
+}
+.contact__form .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.faq{
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+.accordion{
+    position: relative;
+    width: 350px;
+    margin-left: 40px;
+}
+.title{
+    margin-top: 20px;
+    text-align: center;
+}
+.content-accordion{
+    margin-top: 35px;
+    margin-right: 50px;
+}
+.question-answer{
+    width: 100%;
+}
+.question{
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    width: 30rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+}
+.accordion-img{
+    position: relative;
+    width: 20rem;
+}
+.title-question{
+    margin: 1,4rem 0;
+    font-weight: 500;
+    color:black
+}
+.question-btn{
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.up-icon{
+    display: none;
+}
+.answer{
+    line-height: 1.8;
+    font-size: small;
+    display: none;
+    background-color: rgb(120, 15, 155);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
+.show-text .answer {
+    display: block;
+}
+.show-text .up-icon{
+    display: inline;
+}
+.show-text .down-icon{
+    display: none;
+}
+@media screen and (min-width: 62rem) {
+     .accordion{
+        width: 57rem;
+        height: 30rem;
+        display: flex;
+     }
+     .accordion-img {
+        position: relative;
+        width: 620px;
+        height: 28rem;
+        margin-right: 2rem;
+      }
+    
+      .question-answer {
+        width: 380px;
+      }
+    
+      .content-accordion {
+        margin-top: 85px;
+      }
+    
+      .title {
+        margin-top: 50px;
+      }
+}
